@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.LogInFragment">
+
+    <EditText
+        android:id="@+id/signup_email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="EMail"
+        android:inputType="textEmailAddress"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"/>
+    <EditText
+        android:id="@+id/signup_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/signup_email_edit_text"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"/>
+    <EditText
+        android:id="@+id/signup_confirm_password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:layout_below="@+id/signup_password_edit_text"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/signup_done_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Sign Up"
+        android:layout_below="@+id/signup_confirm_password_edit_text"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"/>
+</RelativeLayout>
